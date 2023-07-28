@@ -1,7 +1,29 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
+
 
 const inter = Inter({ subsets: ['latin'] })
+
+// Font files can be colocated inside of `app`
+export const myFont = localFont({
+  src: [
+  {
+    path : '../../public/fonts/MADEVoyagerPERSONALUSE-Regular.otf',
+  },
+  {
+    path : '../../public/fonts/MADEVoyagerPERSONALUSE-Bold.otf',
+  },
+  {
+    path : '../../public/fonts/MADEVoyagerPERSONALUSE-Light.otf',
+  },
+  {
+    path : '../../public/fonts/MADEVoyagerPERSONALUSE-Medium.otf',
+  },
+  {
+    path : '../../public/fonts/MADEVoyagerPERSONALUSE-Thin.otf',
+  },
+  ]})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +33,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={myFont.className}>{children}</body>
     </html>
   )
 }

@@ -2,12 +2,12 @@ import Image from 'next/image'
 
 const NavBar = () => {
     return(
-    <div className='flex items-center justify-between w-full'>
+    <div className='flex items-center justify-between w-full text-[#C4C5C5]'>
         <a href="/">
             <Image 
               src='/logo2.png'
               alt="logo" 
-              className="flex items-center object-contain" 
+              className="flex items-center object-contain hover:animate-spin" 
               width={90}
               height={20}
             />

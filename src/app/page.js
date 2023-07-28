@@ -3,28 +3,30 @@ import NavBar from "./NavBar"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className='fixed top-1'>
-      </div>
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <div className="fixed left-0 top-0 flex w-full border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-blue-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          <NavBar></NavBar>
-          <code className="font-mono font-bold"></code>
-        </div>
+    <main className="min-h-screen min-w-screen items-center justify-between bg-[#08090B]">
+        {/* <div className="fixed left-0 top-0 flex w-full border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-6 backdrop-blur-2xl dark:border-neutral-800 dark:bg-blue-800/30 dark:from-inherit lg:w-full lg:rounded-xl lg:border lg:bg-blue-800 lg:p-4 lg:dark:bg-blue-800/30"> */}
+        <div className="fixed left-0 top-0 w-full border-b border-gray-300 bg-gradient-to-r from-zinc-800 pb-6 pt-6 backdrop-blur-2xl"> 
+          <NavBar/>
       </div>
 
       {/* <div className="relative flex full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]"> */}
-      <div className='flex flex-wrap justify-center'>
-        <div className='/12 sm:w-4/12 px-4'>
+      <div className='mx-auto px-4 pt-10 md:max-w-full h-full'>
+      <div className='flex'>
+        <div className=''>
           <Image
             // className="w-6/12 sm:w-4/12 px-4 pulse-1 drop-shadow-lg drop-shadow-blue-800/50" 
-            className="shadow-xl shadow-white rounded-full max-w-full h-auto align-middle border-4" 
+            className="mt-12 fixed right-2 shadow-xl shadow-white rounded-tl-extraLarge rounded-br-extraLarge border-4 border-yellow-600 hover:animate-spin pr-2 pl-1" 
             src="/mainpic2.jpg"
             alt=""
-            width={180}
-            height={37}
-            priority
+            width={250}
+            height={100}
           />
+        </div>
+        <div className='relative text-shadow-black text-shadow-lg text-left w-full'>
+          <p className="pt-40 text-lg font-light leading-7 text-white md:text-base">
+            I'm a <span className="font-thin">Developer</span> &amp;<span className="text-gradient-red font-bold"> Bikini Specialist & Model</span>.
+          </p>
+          <h1 className="text-6xl font-bold text-md:text-8xl">Clement Cariou</h1>
         </div>
       </div>
 
@@ -36,15 +38,14 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
+            Project 1
             {' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-          </p>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>teub agile</p>
         </a>
-
         <a
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -52,25 +53,49 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
+            Project2{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Anus senteur musc</p>
         </a>
+        <a
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Deploy3{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>il faut chaud</p>
+        </a>
+        <a
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Project4{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>la chatte a mami</p>
+        </a>
+
       </div>
-      <div className="relative bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-          </a>
-        </div>
+
+      <div className="bottom-0 left-0 text-color-white z-10 h-48 w-full items-end justify-center">
+        <p>Clement Cariou</p>
+        <p>Helsinki, Uusima, Finland</p>
+      </div>
+      </div>
     </main>
   )
 }

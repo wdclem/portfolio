@@ -1,3 +1,5 @@
+// import { myFont } from "@/app/layout"
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,6 +14,16 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      borderRadius: {
+        extraLarge: '12rem'
+      },
+      // fontFamily: {
+      //   reg: [myFont.localFont[0]],
+      //   // bold: [myFont[1]],
+      //   // light: [myFont[2]],
+      //   // medium: [myFont[3]],
+      //   // thin: [myFont[4]],
+      // }, 
     },
   },
   plugins: [],
