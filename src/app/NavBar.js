@@ -19,6 +19,9 @@ const NavBar = () => {
         <a className="font-semibold" href="/about">
             About
         </a>
+        <a className="font-semibold" href="/league-selector">
+           cv 
+        </a>
     </div>
   </div>
   )
