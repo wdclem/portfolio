@@ -7,22 +7,20 @@ const NavBar = () => {
             <Image 
               src='/logo2.png'
               alt="logo" 
-              className="flex items-center object-contain hover:animate-spin" 
-              width={90}
+              className="object-contain hover:rotate-[360deg] transition-transform ease-in-out duration-500" 
+              width={100}
               height={20}
             />
         </a>
-    <div className="flex items-center gap-4 text-[#C0F1ED] mr-2">
-        <a className="font-semibold" href="/league-selector">
+        <a className="hidden font-semibold" href="">
             Work
         </a>
-        <a className="font-semibold" href="/about">
+        <a className="font-semibold mr-6" href="/about">
             About
         </a>
-        <a className="font-semibold" href="/league-selector">
+        <a className="hidden font-semibold" href="">
            cv 
         </a>
-    </div>
   </div>
   )
 }
