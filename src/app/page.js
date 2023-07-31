@@ -20,11 +20,11 @@ export default function Home() {
               I'm a <span className="font-thin">Problem solver, Developer & foremost the world most successful DJ body model</span>
             </p>
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">CLEMENT LE CARIOU</h1>
-            <a href="#projects" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#3C3D3F] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
+            <a href="#projects" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-tr-extraLarge bg-[#3C3D3F] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
                check my work 
                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base text-center text-white border border-gray-300 rounded-tl-extraLarge hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
                Check my cv 
             </a> 
             <Socials/>
@@ -33,13 +33,13 @@ export default function Home() {
           <Image
             className="relative"
             src="/mainpic3.png"
-            width={337} // Adjust the width to make the picture bigger
-            height={450} // Adjust the height to make the picture bigger
+            width={350} // Adjust the width to make the picture bigger
+            height={400} // Adjust the height to make the picture bigger
             />
           </div>
         </div>
       </div> 
-      <div id='projects' className='bg-[#2758BA] h-screen grid max-w-screen-xl mx-auto md:gap-8 xl:gap-0 lg:py-16 md:grid-cols-12 md:grid-rows-5'>
+      <div id='projects' className='flex bg-[#2758BA] h-screen grid grid-cols-5 max-w-screen-xl mx-auto md:gap-8 xl:gap-0 lg:py-16 md:grid-cols-12 md:grid-rows-5'>
         <div class="hidden md:flex  md:col-span-6 md:col-start-2 md:row-start-3 md:items-center">
             <Image
               className=""
@@ -50,45 +50,34 @@ export default function Home() {
 
             />
         </div>
-      <h1 className='col-start-6 md:col-start-8 col-span-2'>MY PROJECTS</h1>
-      <hr class="my-14 h-0.5 border-t-0 bg-neutral-100 opacity-70" />
-      <div className="grid text-center lg:mb-0 lg:text-left md:col-start-8 md:col-span-4 md:row-start-2">
-        <a
-          href=""
-          className="rounded-lg px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
+      <h1 className='col-start-3 md:col-start-8 col-span-2 px-2 mb-0'>MY PROJECTS</h1>
+        <p className='col-start-5 text-sm md:col-start-12 mb-0'>top</p>
+      <hr class="ml-10 w-[80vw] my-2 h-0.5 border-t-0 bg-neutral-100 opacity-80" />
+      <div className="text-center lg:mb-0 lg:text-left md:col-start-8 md:col-span-4 md:row-start-2">
+        <div className="mt-4 col-start-3 rounded-lg px-2 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30">
+          <h2 className={`mb-2 text-2xl font-semibold`}>
             Bscore
             {' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            </span>
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p className={`m-0 max-w-[50ch] text-sm opacity-50`}>Web app for sports</p>
-        </a>
-        <hr class="ml-10 w-3/4 my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-        <a
-          href=""
-          className="rounded-lg px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
-        >
+        </div>
+        <hr class="ml-10 w-3/4 my-12 h-0.5 border-t-0 bg-neutral-100 opacity-80" />
+        <div className="col-start-3 rounded-lg px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30">
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Lem-in{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            </span>
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p className={`m-0 max-w-[50ch] text-sm opacity-50`}>Solving algorithm</p>
-        </a>
-        <hr class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-        <a
-          href=""
-          className="rounded-lg px-5 py-4 transition-colorshover:border-neutral-700 hover:bg-neutral-800/30"
-        >
+        </div>
+        <hr class="ml-10 w-3/4 my-12 h-0.5 border-t-0 bg-neutral-100 opacity-80" />
+        <div className="col-start-3 rounded-lg px-5 py-4 transition-colorshover:border-neutral-700 hover:bg-neutral-800/30">
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Libft{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            </span>
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p className={`m-0 max-w-[50ch] text-sm opacity-50`}>il faut chaud</p>
-        </a>
+        </div>
         <hr class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
         </div>
       </div>

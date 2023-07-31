@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const NavBar = () => {
     return(
-    <div className='flex items-center justify-between w-full text-[#C4C5C5]'>
+    <div className='flex items-center md:justify-between w-screen text-[#C4C5C5] ml-5'>
         <a href="/">
             <Image 
               src='/logo2.png'
@@ -12,14 +12,8 @@ const NavBar = () => {
               height={20}
             />
         </a>
-        <a className="hidden font-semibold" href="">
-            Work
-        </a>
-        <a className="font-semibold mr-6" href="/about">
+        <a className="font-semibold md:pr-24" href="/about">
             About
-        </a>
-        <a className="hidden font-semibold" href="">
-           cv 
         </a>
   </div>
   )
