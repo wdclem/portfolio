@@ -7,7 +7,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 // Font files can be colocated inside of `app`
 export const myFont = localFont({
-  src: '../../public/fonts/MADEOkineSansPERSONALUSE-regular.otf'
+  src: '../../public/fonts/MADEOkineSansPERSONALUSE-Regular.otf'
+  })
+
+export const myFontOutline = localFont({
+  src: '../../public/fonts/MADEOkineSansPERSONALUSE-RegularOutline.otf'
   })
 
 export default function RootLayout({ children }) {
