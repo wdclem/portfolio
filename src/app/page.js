@@ -12,7 +12,7 @@ export default function Home() {
         {/* <div className="fixed left-0 top-0 w-full border-b border-gray-300 bg-gradient-to-r from-zinc-800 pb-6 pt-6 backdrop-blur-2xl">  */}
           <NavBar/>
         </div>
-        <div class="grid md:grid-cols-5 max-w-screen-xl px-4 md:px-16 py-24 mx-auto lg:gap-8 xl:gap-0 md:py-4 lg:grid-cols-12">
+        <div class="grid md:grid-cols-5 w-screen px-4 md:px-16 py-24 mx-auto lg:gap-8 xl:gap-0 md:py-4 lg:grid-cols-12">
           <div class="mr-auto place-self-center lg:col-span-6">
           {/* <div className="relative flex full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]"> */}
           {/* <div className='flex mx-auto px-4 pt-0 max-w-full '> */}
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </div>
       </div> 
-      <div id='projects' className='flex bg-[#2758BA] h-screen grid grid-cols-5 grid-row-4 max-w-screen-xl md:gap-8 xl:gap-0 lg:py-16 md:grid-cols-12 md:grid-rows-5'>
+      <div id='projects' className='flex bg-[#2758BA] h-screen w-screen grid grid-cols-5 grid-row-4 max-w-screen md:gap-8 xl:gap-0 lg:py-16 md:grid-cols-12 md:grid-rows-5'>
         <div class="hidden md:flex md:col-span-6 md:col-start-2 md:row-start-3 md:items-center">
             <Image
               className=""
@@ -67,7 +67,7 @@ export default function Home() {
       </div>
       {/* <hr className="col-start-2 col-span-3 h-0.5 bg-neutral-100 opacity-50 md:col-start-9 md:row-start-2 md:col-span-3"/> */}
       <div className="grid grid-cols-6 col-start-0 row-start-2 w-screen md:w-fit text-center lg:mb-0 lg:text-left md:col-start-8 md:col-span-4 md:row-start-2">
-        <hr className="col-start-2 col-span-5 my-2 h-0.5 border-t-0 bg-neutral-100 opacity-50 md:ml-6" />
+        <hr className="col-start-2 col-span-4 my-2 h-0.5 border-t-0 bg-neutral-100 opacity-50 md:ml-6 md:col-start-2 md:col-span-5" />
         <div className="text-start mt-4 mb-4 col-start-3 col-span-3 rounded-lg px-4 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30">
           <a href='https://betterscore.vercel.app/'>
             <h2 className={`mb-2 ml-5 text-2xl`}>

@@ -12,7 +12,7 @@ const NavBar = () => {
               height={20}
             />
         </a>
-        <a className="font-semibold md:pr-24" href="/about">
+        <a className="font-semibold md:pr-44" href="/about">
             About
         </a>
   </div>
