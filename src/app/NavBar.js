@@ -7,7 +7,7 @@ const NavBar = () => {
             <Image 
               src='/logo2.png'
               alt="logo" 
-              className="object-contain hover:rotate-[360deg] transition-transform ease-in-out duration-500" 
+              className="-rotate-12 object-contain hover:rotate-[360deg] transition-transform ease-in-out duration-500" 
               width={100}
               height={20}
             />
