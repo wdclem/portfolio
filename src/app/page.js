@@ -2,6 +2,7 @@ import Image from 'next/image'
 import NavBar from "./NavBar"
 import Socials from "./socials"
 import ImageFlipper from "./imgflipper"
+import About from "./about"
 import { myFontOutline } from './layout'
 
 export default function Home() {
@@ -121,8 +122,11 @@ export default function Home() {
         ***************
            CV 
         ***************
+        colors consider :
+        bg-[#08090B]
+         bg-[#009900]
        */}
-      <div id='cv' className='flex bg-[#009900] h-screen w-screen grid grid-cols-5 max-w-screen <div class="grid grid-rows-[max-content_1fr] gap-x-4'>
+      <div id='cv' className='flex bg-[#08090B] h-screen w-screen grid grid-cols-5 max-w-screen <div class="grid grid-rows-[max-content_1fr] gap-x-4'>
         <h1 className={`${myFontOutline.className} h-[78px] ml-5 text-4xl col-start-2 col-span-3 px-2 md:text-6xl mb-0 md:ml-0 text-center`}>CV</h1>
         <div className='col-start-5 text-sm md:col-start-5 text-center mr-2 flex flex-col items-center'>
           <a href="#top">
@@ -133,8 +137,9 @@ export default function Home() {
           </a>
         </div>
         <ImageFlipper/>
-       <p className='mb-4 opacity-50 col-start-2 col-span-3 text-center text-sm text-[#3C3D3F]'> click to flip !</p>
+       <p className='mb-4 opacity-100 col-start-2 col-span-3 text-center text-sm text-[#3C3D3F]'> click to flip !</p>
       </div>
+      <About/>
       <div className="bottom-0 left-0 text-color-white z-10 h-28 w-full items-end text-center">
         <p>Clement Cariou</p>
         <p>Helsinki, Uusima, Finland</p>
