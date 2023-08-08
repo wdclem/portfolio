@@ -7,7 +7,7 @@ import { myFontOutline } from './layout'
 
 export default function Home() {
   return (
-    <main className="overflow-y-auto">
+    <main className="overflow-y-auto overflow-x-hidden">
       <div id="circle" className="circle z-10"></div>
       <div className='min-h-screen min-w-screen items-center justify-between bg-[#08090B]'> 
         <div id='top' className="left-0 top-0 w-full border-b border-[#3C3D3F] bg-gradient-to-r from-[#2758BA] pb-2 pt-2 backdrop-blur-2xl"> 
@@ -15,38 +15,38 @@ export default function Home() {
           <NavBar/>
         </div>
         <div className='contents'></div>
-        <div class="grid md:grid-cols-5 max-w-[375px] h-full md:w-screen md:min-w-full px-4 md:px-16 py-24 mx-auto lg:gap-8 xl:gap-0 md:py-4">
-          <div class="mr-auto place-self-center lg:col-span-6">
+        <div className="grid md:grid-cols-5 max-w-[375px] h-full md:w-screen md:min-w-full px-4 md:px-16 py-24 mx-auto lg:gap-8 xl:gap-0 md:py-4">
+          <div className="mr-auto place-self-center lg:col-span-6">
           {/* <div className="relative flex full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]"> */}
           {/* <div className='flex mx-auto px-4 pt-0 max-w-full '> */}
-          <h1 class={`${myFontOutline.className} max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white`}>HEY, I&apos;M</h1>
-          <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">CLEMENT</h1>
-          <p class="md:text-md lg:text-lg text-gray-400">
+          <h1 className={`${myFontOutline.className} max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white`}>HEY, I&apos;M</h1>
+          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">CLEMENT</h1>
+          <p className="md:text-md lg:text-lg text-gray-400">
             I&apos;m a Junior Developper, exploring web technologies.
           </p>
-          <p class="mb-6 lg:mb-8 md:text-md lg:text-lg text-gray-400">
+          <p className="mb-6 lg:mb-8 md:text-md lg:text-lg text-gray-400">
             I enjoy pushing my limits and discover creative solutions to real life problems.
           </p>
-          <a href="#projects" class="inline-flex items-center justify-center px-5 py-3 mr-3 mt-4 text-base font-medium text-center text-white rounded-tr-extraLarge bg-[#3C3D3F] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 w-[110px] h-[50]">
+          <a href="#projects" className="inline-flex items-center justify-center px-5 py-3 mr-3 mt-4 text-base font-medium text-center text-white rounded-tr-extraLarge bg-[#3C3D3F] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 w-[110px] h-[50]">
            work 
-            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" ></path></svg>
           </a>
-          <a href="#cv" class="inline-flex items-center justify-center px-5 py-3 mr-3 mt-4 text-base font-medium text-center text-white rounded-tr-extraLarge bg-[#3C3D3F] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 w-[110px] h-[50]">
+          <a href="#cv" className="inline-flex items-center justify-center px-5 py-3 mr-3 mt-4 text-base font-medium text-center text-white rounded-tr-extraLarge bg-[#3C3D3F] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 w-[110px] h-[50]">
              my cv 
-            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path></svg>
             </a> 
           {/* <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 mt-4 text-base text-center text-white border border-gray-300 rounded-tl-extraLarge hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
             Check my cv 
           </a>  */}
             <Socials/>
           </div>
-          <div class="hidden lg:mt-0 md:col-start-8 md:col-span-6 md:flex">
+          <div className="hidden lg:mt-0 md:col-start-8 md:col-span-6 md:flex">
           <Image
             className="opacity-75 rounded-tl-extraLarge"
             src="/mainpic3.png"
             alt=''
-            width={400} // Adjust the width to make the picture bigger
-            height={450} // Adjust the height to make the picture bigger
+            width={400} 
+            height={450} 
             />
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Home() {
               object-fit='contain'
             />
         </div>
-      <h1 className={`${myFontOutline.className} ml-5 text-4xl col-start-2 md:col-start-2 col-span-3 px-2 md:text-6xl mb-0 md:ml-0 text-center`}>PROJECTS</h1>
+      <h1 className={`${myFontOutline.className} h-[78px] ml-5 text-4xl col-start-2 md:col-start-2 col-span-3 px-2 md:text-6xl mb-0 md:ml-0 text-center`}>PROJECTS</h1>
       <div className='col-start-5 text-sm md:col-start-5 mb-0 text-center mr-2 flex flex-col items-center'>
         <a href="#top">
           <p className=''>top</p>
@@ -137,10 +137,19 @@ export default function Home() {
           </a>
         </div>
         <ImageFlipper/>
-       <p className='mb-4 opacity-100 col-start-2 col-span-3 text-center text-sm text-[#3C3D3F]'> click to flip !</p>
+        <a        
+          href="/CVdl.pdf" 
+          download="ccariou-cv"
+          className="m-4 row-start-1 col-start-1 inline-flex items-center justify-center px-5 py-3 mr-3 mt-4 text-base font-medium text-center text-white rounded-tr-extraLarge bg-[#3C3D3F] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 w-[120px] h-[50]">
+          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          <span className='text-center text-white text-sm'>Download</span>
+        </a> 
+        <p className='mb-4 opacity-80 col-start-2 col-span-3 text-center text-sm text-[#FFF4F0]'> click to flip !</p>
       </div>
       <About/>
-      <div className="bottom-0 left-0 text-color-white z-10 h-28 w-full items-end text-center">
+      <div className="bottom-0 left-0 text-color-white z-10 h-28 w-full items-end text-center mt-4">
         <p>Clement Cariou</p>
         <p>Helsinki, Uusima, Finland</p>
       </div>

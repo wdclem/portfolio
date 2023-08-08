@@ -17,11 +17,11 @@ const ImageFlipper = () => {
             transition-transform items-center row-span-5 col-start-1 col-span-5 relative mr-4 ml-4 md:mr-0 md:ml-0`} 
             onClick={flipImage}>
           <Image
-            className='transform'
+            className='transform opacity-80 hover:cursor-pointer' 
             src={flipped ? '/cv2.jpg' : '/cv1.jpg'}
             alt={flipped ? 'cv2' : 'cv1'}
-            layout='fill'
-            objectFit='contain'
+            fill
+            style={{objectFit:"contain"}}
             />
           </div>
     )
