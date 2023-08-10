@@ -2,7 +2,7 @@
 const SocialLinks = () =>{
     return(
         <div className='relative'>
-        <div className='z-10 flex gap-3 mt-4 ml-2'>
+        <div className='z-10 flex gap-3 pt-12 ml-2'>
             <a href="https://www.linkedin.com/in/ccariou/">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

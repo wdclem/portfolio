@@ -14,6 +14,14 @@ export const myFontOutline = localFont({
   src: '../../public/fonts/MADEOkineSansPERSONALUSE-RegularOutline.otf'
   })
 
+export const myFontLight = localFont({
+  src: '../../public/fonts/MADEOkineSansPERSONALUSE-Light.otf'
+  })
+
+export const myFontBold = localFont({
+  src: '../../public/fonts/MADEOkineSansPERSONALUSE-Bold.otf'
+  })
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`scroll-smooth ${myFont.className}`}> 
