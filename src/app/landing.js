@@ -21,8 +21,8 @@ const Landing = () => {
         </div>
         <div className="hidden lg:mt-0 md:row-start-2 md:row-span-4 md:col-start-5 md:col-span-3 md:flex pl-10">
         <Image
-          className="opacity-75 rounded-tl-extraLarge"
-          src="/mainpic3.png"
+          className="opacity-100 rounded-tl-extraLarge z-10"
+          src="/mainpic4.png"
           alt=''
           width={350} 
           height={400} 
@@ -42,7 +42,7 @@ const Landing = () => {
             I&apos;m a junior developer, exploring web technologies.
           </p>
           <p className="pb-12 md:text-md lg:text-lg text-gray-400">
-            I enjoy pushing my limits and discover creative solutions to real life problems.
+            I enjoy pushing my limits and discovering creative solutions to real life problems.
           </p>
       </motion.div>
       <motion.div animate={{ x:[50, 50, 0], opacity: 1, scale: 1}}

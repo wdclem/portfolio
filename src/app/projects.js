@@ -14,14 +14,8 @@ const Projects = () => {
 
     return(
         <motion.div
-        initial="hidden"
-        whileInView="visible"
-        animate="target"
-        transition={{
-          ease: 'easeInOut',
-          duration: 4,
-        }}
-            id='projects' className='bg-gradient-to-t from-[#2758BA] h-screen grid grid-cols-5 max-w-screen md:grid-rows-5'>
+       
+        id='projects' className='bg-gradient-to-t from-[#2758BA] h-screen grid grid-cols-5 max-w-screen md:grid-rows-5'>
         <div className="hidden md:flex md:col-span-3 md:col-start- md:row-start-3 md:items-center mx-auto">
             <Image
               className=""
@@ -42,6 +36,25 @@ const Projects = () => {
       </div>
       {/* <hr className="col-start-2 col-span-3 h-0.5 bg-neutral-100 opacity-50 md:col-start-9 md:row-start-2 md:col-span-3"/> */}
       <motion.div
+       initial="hidden"
+       whileInView="visible"
+       viewport={{ once: true }}
+       variants={{
+         visible: {
+           x: [0, 0, 0],
+           opacity: 1,
+           scale: 1,
+           transition: {
+             duration: 1,
+             delay: 0.2,
+             ease: [0.5, 0.71, 1, 1.5],
+           },
+         },
+         hidden: {
+           opacity: 0,
+           scale: 0,
+         },
+       }}
         className="grid grid-cols-5 w-screen md:w-fit lg:text-left md:col-start-4 md:col-span-4 md:row-start-2">
         <hr className="col-start-2 col-span-3 my-2 h-0.5 border-t-0 bg-neutral-100 opacity-50 md:col-start-1 md:col-span-5" />
         <div className="text-start mt-4 mb-4 col-start-2 col-span-3 rounded-lg px-4 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
