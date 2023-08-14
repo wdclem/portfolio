@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const About = () => {
     return(
-    <div id='about' className='flex  bg-gradient-to-b from-[#2758BA] h-fit grid grid-cols-7 md:h-fit'>
+    <div id='about' className='flex bg-gradient-to-b from-[#2758BA] to-[#08090B] h-fit grid grid-cols-7 md:h-fit'>
       <h1 className={`${myFontOutline.className} h-[78px] pt-2 ml-5 text-4xl col-start-3 col-span-3 px-2 md:text-6xl md:ml-0 text-center row-end-1`}>ABOUT</h1>
       <div className='h-[78px] col-start-7 text-sm  mb-0 text-center flex flex-col items-end mr-4 pt-2'>
           <a href="#top">
