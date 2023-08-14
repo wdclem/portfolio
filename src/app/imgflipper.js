@@ -11,8 +11,8 @@ const ImageFlipper = () => {
     };
 
     return(
-    <div className="group h-[65vw] w-[45vw] [perspective:1000px]">
-    <div className="h-full w-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+    <div className="group mt-4">
+    <div className="h-[80vh] w-[90vw] md:h-[80vh] md:w-[40vw] transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         <div className="absolute inset-0 shadow-black/40">
       <Image
                 className='opacity-80 hover:cursor-pointer' 
