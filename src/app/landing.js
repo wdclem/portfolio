@@ -35,9 +35,9 @@ const Landing = () => {
                     delay:0.2,
                     ease: [0.5, 0.71, 1, 1.5],}}
                   initial={{opacity:0}}
-                  className="col-start-1 row-start-2 row-span-3 col-span-5 px-4 md:ml-16 mx-auto py-4 text-justify max-w-[600px]">
+                  className="col-start-1 row-start-2 row-span-3 col-span-full md:col-start-1 md:col-span-5 px-4 md:ml-16 mx-auto py-4 text-justify max-w-[600px]">
           <h1 className={`${myFontOutline.className} max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white`}>HEY, I&apos;M</h1>
-          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">CLEMENT</h1>
+          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white text-center">CLEMENT</h1>
           <p className="md:text-md lg:text-lg text-gray-400 mt-10">
             I&apos;m a junior developer, exploring web technologies.
           </p>

@@ -7,24 +7,34 @@ import { useState } from "react";
 
 const Projects = () => {
     const [hoveredProject, setHoveredProject] = useState(null);
-
+    const [prevHoveredProject, setPrevHoveredProject] = useState(null);
+    
     const handleProjectHover = (project) => {
-      setHoveredProject(project);
+      if (project !== hoveredProject) {
+        setPrevHoveredProject(hoveredProject); // Save the previous hovered project
+    
+        setTimeout(() => {
+          setHoveredProject(project); // Apply fade-in effect after a short delay
+        }, 150); // Wait for fade-out transition to complete (adjust as needed)
+      }
     };
+    
 
     return(
-        <motion.div
-       
-        id='projects' className='bg-gradient-to-t from-[#2758BA] h-screen grid grid-cols-5 max-w-screen md:grid-rows-5'>
+        <motion.div id='projects' className='bg-gradient-to-t from-[#2758BA] h-screen grid grid-cols-5 max-w-screen md:grid-rows-5'>
         <div className="hidden md:flex md:col-span-3 md:col-start- md:row-start-3 md:items-center mx-auto">
             <Image
-              className=""
-              src={`/project${hoveredProject === 'Lem-in' ? '2' : hoveredProject === 'Libft' ? '3' : '1'}.png`}
-              alt=''
-              width={550} 
-              height={400}
-              object-fit='contain'
-            />o
+                className={`transition-opacity duration-150 ease-in ${
+                    hoveredProject === prevHoveredProject || !hoveredProject
+                      ? 'opacity-0'
+                      : 'opacity-100'
+                }`}
+                src={`/project${hoveredProject === 'Lem-in' ? '2' : hoveredProject === 'Libft' ? '3' : '1'}.png`}
+                alt=''
+                width={550}
+                height={400}
+                objectFit='contain'
+            />
         </div>
       <h1 className={`${myFontOutline.className} h-[78px] pt-10 ml-5 text-4xl col-start-2 col-span-3 px-2 md:text-6xl mb-0 md:ml-0 text-center`}>PROJECTS</h1>
       <div className='col-start-5 text-sm md:col-start-5 mb-0 text-center flex flex-col items-end mr-4 pt-4'>

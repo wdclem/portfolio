@@ -38,7 +38,7 @@ const Cv = () => {
          opacity:0,
          scale: 1
        }}}
-     className='row-start-2 row-span-4 col-start-1 md:col-start-3 col-span-7 mx-4'>
+     className='row-start-2 row-span-4 col-start-1 md:col-start-3 col-span-3 mx-4'>
         <ImageFlipper className=""/>
     </motion.div>
   </div>
