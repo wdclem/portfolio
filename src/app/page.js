@@ -9,9 +9,9 @@ export default function Home() {
 
 
   return (
-    <main className="t5ext-white scrollbar-none">
+    <main className="text-white scrollbar-none">
       <PageHead/>
-    <div className='overflow-x-auto overflow-y-auto scrollbar-none text-color-white'>
+    <div className='overflow-x-hidden overflow-y-auto scrollbar-none text-color-white'>
       {/*       
         *********** 
         LANDING 

@@ -21,7 +21,7 @@ const Projects = () => {
     
 
     return(
-        <motion.div id='projects' className='bg-gradient-to-t from-[#2758BA] h-screen grid grid-cols-5 max-w-screen md:grid-rows-5'>
+        <motion.div id='projects' className='bg-gradient-to-t from-[#2758BA] to-[#08090B] h-screen grid grid-cols-5 max-w-screen md:grid-rows-5'>
         <div className="hidden md:flex md:col-span-3 md:col-start- md:row-start-3 md:items-center mx-auto">
             <Image
                 className={`transition-opacity duration-150 ease-in ${
